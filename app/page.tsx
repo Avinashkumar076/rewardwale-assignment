@@ -124,8 +124,8 @@ export default function Home() {
 
       <div className="my-5 mx-2 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
   {
-    cardItems.map((item)=>(
-      <Card title={item.title} desc={item.desc}/>
+    cardItems.map((item, index)=>(
+      <Card key={index} title={item.title} desc={item.desc}/>
     ))
   }
       </div>

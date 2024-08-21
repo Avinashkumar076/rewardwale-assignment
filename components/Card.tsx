@@ -8,7 +8,6 @@ type CardProps = {
 
 
 function Card({ title, desc }: CardProps) {
-  console.log("title", title);
   
   return (
 
