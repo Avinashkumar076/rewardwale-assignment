@@ -36,3 +36,6 @@ body {
     display: none;
   }
 }
+.Bricolage_Grotesque{
+  font-family: var(--font-Bricolage_Grotesque);
+}

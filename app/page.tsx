@@ -35,7 +35,7 @@ export default function Home() {
       <div className="hidden lg:flex lg:flex-row lg:gap-20 my-16">
         {/* Text and Buttons Section */}
         <div className="flex-1 my-20">
-          <div className="text-4xl sm:text-5xl md:text-6xl font-bold">
+          <div className="text-6xl sm:text-5xl md:text-7xl font-bold Bricolage_Grotesque">
             Marketing website <br /> done with Astro
           </div>
           <div className="my-6 text-base sm:text-lg md:text-xl text-gray-500">
@@ -76,7 +76,7 @@ export default function Home() {
       <div className="lg:hidden block mt-8">
         <div className="flex flex-col items-center">
           {/* Text and Buttons Section */}
-          <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-center">
+          <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-center Bricolage_Grotesque">
             Marketing website <br /> done with Astro
           </div>
           <div className="my-6 text-base sm:text-lg md:text-xl text-center text-gray-500">
@@ -113,7 +113,7 @@ export default function Home() {
       </div>
 
       <div className="my-10">
-        <div className="text-5xl mx-5 font-bold">
+        <div className="text-5xl mx-5 font-bold Bricolage_Grotesque">
           Everything you need to start a website
         </div>
         <div className="my-4 mx-5 text-lg text-gray-500">
@@ -123,11 +123,11 @@ export default function Home() {
       </div>
 
       <div className="my-5 mx-2 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
-  {
-    cardItems.map((item, index)=>(
-      <Card key={index} title={item.title} desc={item.desc}/>
-    ))
-  }
+        {
+          cardItems.map((item, index)=>(
+            <Card key={index} title={item.title} desc={item.desc}/>
+          ))
+        }
       </div>
 
       <div className="text-center my-14">
@@ -144,7 +144,7 @@ export default function Home() {
 
       <div>
         <div className="bg-black text-center p-10 sm:p-16 md:p-18 rounded-xl">
-          <div className="text-white text-2xl sm:text-3xl md:text-5xl my-5 md:my-7">
+          <div className="text-white text-2xl sm:text-3xl md:text-6xl my-5 md:my-7 Bricolage_Grotesque">
             Build faster websites.
           </div>
           <div className="text-base sm:text-lg md:text-xl my-4 md:my-5 text-gray-300">

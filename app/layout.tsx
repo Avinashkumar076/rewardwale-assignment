@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
+// import {  } from "next/font/google"
 
 const inter = Inter({ subsets: ["latin"] });
+
+const Bricolage_Grotesque_init = Bricolage_Grotesque({
+  subsets:['latin'],
+  // weight:['700', '400'], 
+  variable:'--font-Bricolage_Grotesque'
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} ${Bricolage_Grotesque_init.className}`}>{children}</body>
     </html>
   );
 }
